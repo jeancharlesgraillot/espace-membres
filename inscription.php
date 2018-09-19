@@ -17,6 +17,38 @@
 
   <?php include("header.php");?>
 
+  <main>
+
+  <p class="h3">Inscription : </p>
+
+  <form class="mt-3 ml-3 mb-5" action="inscription_post.php" method="post">
+
+    <p>
+      <label for="pseudo">Pseudo : </label>
+      <input type="text" name="pseudo" required/>
+    </p>
+
+    <p>
+       <label for="password" >Mot de passe : </label>
+       <input type="password" name="password" value="" required>
+    </p>
+
+    <p>
+      <label for="password_confirmation" >Confirmer mot de passe : </label>
+      <input type="password" name="password_confirmation" value="" required>
+    </p>
+
+    <p>
+        <label for="mail">Email : </label>
+        <input type="email" name="email" required/>
+    </p>
+
+    <input type="submit" value="Envoyer" />
+
+  </form>
+
+  </main>
+
 
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>

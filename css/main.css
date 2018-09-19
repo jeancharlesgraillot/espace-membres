@@ -285,3 +285,31 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+/******************************Start*****************************/
+
+/******************************Colors*******************************/
+
+.orangeBackground{
+  background-color: #ec6609!important;
+}
+
+.blueGreyBackground{
+  background-color: #308889!important;
+}
+
+.blueGreyText{
+  color: #308889!important;
+}
+
+.orangeText{
+  color: #ec6609!important;
+}
+
+.blackText{
+  color: #000!important;
+}
+
+.whiteText{
+  color: #fff!important;
+}
