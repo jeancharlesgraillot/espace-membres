@@ -1,7 +1,7 @@
 <header class="d-flex align-items-center blueGreyBackground">
   <div class="container-fluid">
     <div class="logonavbar row">
-      <div class="logo col-8 col-lg-4">
+      <div class="logo col-4 col-lg-4">
         <a href="index.php">
           <h1 class="h5 blackText">Baskets For Street </h1>
           <h2 class="h6 whiteText">Le spécialiste des sneakers pour tous</h2>
@@ -18,7 +18,17 @@
         <button type="button" class="btn btn-primary">Déconnexion</button>
         </a>
       </div>
-      <div class="navbar col-4 d-flex justify-content-end">
+      <div class="col-2 displayPseudo text-center my-auto">
+        <p>
+            <?php
+            if (isset($_SESSION['id']) AND isset($_SESSION['pseudo']))
+            {
+                echo 'Bonjour ' . $_SESSION['pseudo'];
+            }
+            ?>
+        </p>
+      </div>
+      <div class="navbar col-2 d-flex justify-content-end">
         <nav class="">
           <ul class="list-unstyled d-flex justify-content-between">
             <li class="mr-3"><a class="scroll whiteText" href="index.php">Accueil</a></li>

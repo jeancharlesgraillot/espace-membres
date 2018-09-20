@@ -24,11 +24,18 @@ AND isset($email) AND !empty($email) AND preg_match("#^[a-z0-9._-]+@[a-z0-9._-]{
   echo "Merci pour votre inscription, veuillez vous connecter";
   header('refresh:2;url=index.php');
 
-}else{
-
-  echo 'Quelque chose cloche ! Merci de réessayer';
+}
+elseif ( empty($pseudo) OR empty($pass) OR empty($pass_confirmation) OR empty($email) ) {
+  echo 'Merci de remplir tous les champs !.';
   header('refresh:2;url=inscription.php');
-
+}
+elseif ($pass != $pass_confirmation) {
+  echo "Resaisissez le(s) mots de passe !";
+  header('refresh:2;url=inscription.php');
+}
+elseif (!preg_match("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $email)) {
+  echo "L'email est incorrect !";
+  header('refresh:2;url=inscription.php');
 }
 
 ?>
