@@ -11,8 +11,11 @@
         <a href="inscription.php">
         <button type="button" class="btn btn-primary">Inscription</button>
         </a>
-        <a href="check_member.php">
-        <button type="button" class="btn btn-primary">Se connecter</button>
+        <a href="connexion.php">
+        <button type="button" class="btn btn-primary">Connexion</button>
+        </a>
+        <a href="deconnexion.php">
+        <button type="button" class="btn btn-primary">Déconnexion</button>
         </a>
       </div>
       <div class="navbar col-4 d-flex justify-content-end">

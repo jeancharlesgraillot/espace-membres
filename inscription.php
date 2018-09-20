@@ -29,13 +29,13 @@
     </p>
 
     <p>
-       <label for="password" >Mot de passe : </label>
-       <input type="password" name="password" value="" required>
+       <label for="pass" >Mot de passe : </label>
+       <input type="password" name="pass" value="" required>
     </p>
 
     <p>
-      <label for="password_confirmation" >Confirmer mot de passe : </label>
-      <input type="password" name="password_confirmation" value="" required>
+      <label for="pass_confirmation" >Confirmer mot de passe : </label>
+      <input type="password" name="pass_confirmation" value="" required>
     </p>
 
     <p>
