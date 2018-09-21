@@ -24,7 +24,7 @@ if ($donnees['pseudo'] == $pseudo) {
   if (isset($pseudo) AND !empty($pseudo) AND isset($pass) AND !empty($pass) AND isset($pass_confirmation) AND !empty($pass_confirmation)
   AND isset($email) AND !empty($email) AND preg_match("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $email) AND ($pass == $pass_confirmation)){
 
-    $req = $bdd->prepare('INSERT INTO membres (pseudo, pass, email, date_inscription) VALUES(:pseudo, :pass, :email, CURDATE())');
+    $req = $bdd->prepare('INSERT INTO membres (pseudo, pass, email) VALUES(:pseudo, :pass, :email)');
     $req->execute(array(
         'pseudo' => $pseudo,
         'pass' => $pass_hache,
