@@ -19,7 +19,7 @@
 
   <main>
 
-  <p class="h3">Inscription : </p>
+  <p class="h3 mt-4 mb-4 ml-3">Inscription : </p>
 
   <form class="mt-3 ml-3 mb-5" action="inscription_post.php" method="post">
 
